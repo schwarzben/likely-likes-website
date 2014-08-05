@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<!-- Video player -->
+<link rel="stylesheet" href="js/bootstrap-video-player/video-default.css">
 <!-- Own modifications -->
 <link rel="stylesheet" href="style.css">
 <body role="document">
@@ -46,9 +48,20 @@
 <div class="container" role="main">
   <img src="images/likely-likes-title.jpg" class="img-responsive" alt="Likely Likes in action">
   <div class="page-header"><h1>Likely Likes <small>A browser plugin to help you get the most likes out of your Facebook posts. It presents you with your friends’ reactions as you type (subtly posing the question whether we really want our conversations to be this trivial).</small></h1></div>
-  <p>Coming soon …</p>
+  <div class="page-header"><h1>See it in action</h1></div>
+  <div class="videoUiWrapper">
+    <video width="100%" height="auto" id="demo1">
+      <source src="media/likely-likes.webm" type="video/webm">
+      <source src="media/likely-likes.mp4" type="video/mp4">
+      <p>Sorry, there should be a video player showing instead of this text. You may however obtain a copy of the video file here: <a href="media/likely-likes.mp4">Likely Likes Demo Video</a> (3 <abbr title="Megabytes">MB</abbr>)</p>
+    </video>
+  </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-video-player/jquery.video-ui.js"></script>
+<script>
+$('#demo1').videoUI();
+</script>
