@@ -7,3 +7,7 @@ body {
 .media-fullwidth {
   width: 100%;
 }
+
+.page-header-close {
+  margin-top: 0;
+}
